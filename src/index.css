@@ -1,1 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import "tailwindcss";
+
+@theme {
+     --color-Primary : #4F85AA;
+    --color-textClr: #333333;
+    --color-stroke: #848484;
+    --color-bgClr: #E5EDF2;
+    --color-White: #F8F9FB;
+    --font-Poppins: 'Poppins', sans-serif;
+    --font-OpenSans: 'Open Sans', sans-serif;
+   
+}
+
+.label-control {
+    @apply text-textClr font-semibold text-lg md:text-[1.375rem]  leading-[100%] mb-1
+}
+.form-control {
+    @apply bg-White border border-[#E5EDF2] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] h-15 pl-4 pr-10 py-2.5 px-3 rounded-[16px] w-full focus:outline-none
+}
